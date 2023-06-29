@@ -1,0 +1,794 @@
+:root{
+    --main:rgb(171, 116, 66);
+    --sec:rgb(245, 245, 245);
+    --acc: #353535;
+    --opacity:rgba(171,116,66,0.5);
+    --darkTendina: rgba(53,53,53,0.8);
+    --light: white;
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+.lightMode{
+    background-color: var(--light);
+    color: var(--acc);
+}
+body {
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--acc);
+    background-color: var(--light);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: var(--acc);
+}
+/* intestazione sopra Navbar */
+.intestazione{
+    background-color: var(--sec);
+    height: 50px;
+}
+.intestazione p{
+    font-size: 0.9rem;
+}
+.intestazione i{
+    color: var(--main);
+}
+.iconInt{
+background-color: var(--light);
+width: 35px;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* darmodeButton */
+.iconInt2{
+    background-color: var(--acc);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkButton{
+    border: none;
+    padding: 0;
+}
+    
+
+
+/* navbar */
+.navbar{
+    background-color: var(--light);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--acc);
+    font-weight: 500;
+}
+.text-primary {
+    color: var(--main) !important;
+}
+.btn {
+    font-weight: 500;
+    transition: .5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    border-radius: 0px;
+}
+.btn.btn-primary, .btn.btn-secondary {
+    color: var(--light);
+}
+.btn-light{
+    background-color: var(--light);
+    color: var(--acc);
+}
+.btn-light:hover{
+    position: relative;
+    right: 1px;
+    bottom: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: var(--light);
+    background-color: var(--acc);
+}
+.btn-primary {
+    color: var(--acc);
+    background-color: var(--main);
+    border: 2px solid  var(--main);
+}
+.btn-primary:hover{
+    background-color: var(--sec) ;
+    color: #b8895e;
+    border: 2px solid var(--sec) ;
+    position: relative;
+    right: 1px;
+    bottom: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.btn-primary:focus {
+    background-color: var(--sec);
+    border-color: var(--sec);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.nav-link:hover{
+    color: var(--main) !important;
+}
+#quoteNav:hover{
+    color: var(--acc) !important;
+}
+/* carosello-header */
+h1{
+    font-family:'64 Roboto', sans-serif;
+    font-weight: 900;
+} 
+/* carosello */
+.carouselH5{
+    animation: h5mov ;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes h5mov {
+    0%{transform: translatey(-35px);}
+    100%{transform: translateY(0px);}
+}
+.carouselH1{
+    animation: h1mov;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes h1mov {
+    0%{transform: translatey(-180px);}
+    100%{transform: translateY(0px);}
+}
+.carouselAS{
+    animation: aSmov;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes aSmov {
+    0%{transform: translatex(-50px);}
+    100%{transform: translatex(0px);}
+}
+.carouselAD{
+    animation: aDmov;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes aDmov {
+    0%{transform: translatex(50px);}
+    100%{transform: translatex(0px);}
+}
+#carousel-texts{
+    bottom : 30%;
+    left: 0;
+}
+#btnPrev{
+    background-color: transparent;
+    background-image: url(../img/chevron-left-solid.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--sec);
+}
+#btnPrev:hover{
+    background-color: var(--main);
+    border: 1px solid var(--main);
+}
+#btnNext{
+    background-image: url(../img/chevron-right-solid.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--sec);
+}
+#btnNext:hover{
+    background-color: var(--main);
+    border: 1px solid var(--main);
+}
+#buttonPosition{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--sec);
+}
+#buttonPosition::after{
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: transparent;
+    border: 1px solid var(--sec);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.carousel-indicators .active{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background-color: var(--main) !important;
+    border: 1px solid var(--main) !important;
+}
+.boxImg::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(53,53,53,0.7),rgba(53,53,53,0.7))
+}
+@media screen and (max-width: 400px){
+     #carousel-texts{
+        top : 3%;
+        left: 0;
+}       #imgC{
+        width: 100%;
+        height: 50vh;
+}
+}
+/* Sezione 01 02 03 04*/
+.boxIcon{
+    background-color: var(--sec);
+    width: 60px;
+    height: 60px;
+}
+.h1Numbers{
+    font-family:'64 Roboto', sans-serif;
+    font-weight: 900;
+}
+
+/* Sezione AboutUs */
+
+.numberAbout{
+    color:var(--main);
+}
+.immagineAbout{
+    background-image:url(../img/prima_foto.jpg);
+    background-size: cover;
+}
+.SectionH1After::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    bottom: 0;
+    background-color: var(--acc);
+    margin-left: 10px;
+}
+.SectionH1Before::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    bottom: 0;
+    background-color: var(--acc);
+    margin-left: -50px ;
+}
+/* Sezione OurServices */
+.ourCard{
+    animation: cardMove 1 1s forwards;
+}
+
+.ourCardPhoto{
+    transition: 1s;
+}
+.ourCard:hover .ourCardPhoto{
+    transform: scale(1.2);
+}
+/* Sezione Why Choose Us */
+.immagineWhyChooseUs{
+    background-image: url(/resources/img/seconda_foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Sezione Our Project */
+.ourprojectUl li{
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    list-style: none;
+}
+.ourprojectUl li:hover{
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+.ourprojectUl .active{
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+.proCard{
+    height: 400px;
+    transition: 1s; 
+    animation: projMove 1 0.5s forwards; 
+}
+.proCard:hover .ourCardPhoto{
+    transform: scale(1.2);
+}
+@keyframes projMove {
+    0%{transform: translateY(120px);
+        opacity: 0;}
+    20%{opacity: 0;}
+    30%{opacity: 1;
+        transform: translateY(90px);}
+    100%{transform: translateY(0px);
+        opacity: 1;};
+}
+.cardProj-title{
+    color: var(--main);
+    font-weight: 500;
+}
+.tendina{
+    background-color:var(--darkTendina);
+    left: 0;
+    opacity: 0;
+}
+.tendina i{
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid var(--light);
+    color: var(--light);
+}
+.tendina i:hover{
+    background-color: var(--light);
+    color: var(--acc);
+}
+.proCard:hover .tendina{
+    display: flex;
+    animation: tendinaAni 1 1s forwards ;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+@keyframes tendinaAni{
+    0%{transform: scale(0%);
+        top:100%;
+        opacity: 1;}
+    100%{transform: scale(100%);
+        top:0;
+        opacity: 1;}   
+}
+/* sezione FreeQuote */
+.immagineFreeQuote{
+    background-image:url(../img/terza_foto.jpg);
+    background-size: cover;
+}
+.inputControl{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--acc);
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    appearance: none;
+    border-radius: 0px;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.dropdown-toggle {
+    border: var(--light);
+}
+
+/* contenitore destra freeQuote */
+/* .quoteText{
+width: 100%;
+} */
+
+.inputControl{
+    height: 55px;
+      
+}
+.inputControl:focus{
+    border: 2px solid var(--main) !important;
+}
+
+.btnQuote{
+    background-color: var(--light);
+    border-color: rgba(206,212,218,0.3);
+    width: 100%;
+    box-shadow: none;
+    color:rgb(108,117,125);
+}
+.btnQuote:focus{
+    border: 2px solid var(--main);
+}
+
+/* bottone scroll-up */
+.back-to-top {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/* Box light */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--darkTendina);
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 30%;
+    max-width: 508px;
+    height: 408px;
+    border: 4px solid var(--light);
+}
+  
+  /* The Close Button */
+.close {
+    color: var(--sec);
+    opacity: 0.7;
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    font-size: 3rem;
+}
+  
+.close:hover,
+.close:focus {
+    color: var(--light);
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* Hide the slides by default */
+.mySlides {
+    display: none;
+    max-width: 508px;
+    height: 408px;
+}
+@media screen and (max-width: 400px){
+    .mySlides {
+        display: none;
+        width: 100%;
+        height: 390px;
+}   .modal-content{
+        width: 370px;
+        height: 390px;
+}
+}
+  /* Next & previous buttons */
+.prev,
+.next {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+    padding: 16px;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    justify-content: end;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    opacity: 1;
+    color: var(--light);
+    background-color: transparent;
+}
+ 
+.numbertext {
+color: var(--sec);
+opacity: 0.7;
+font-size: 12px;
+position: absolute;
+bottom: -30px;
+}
+
+/* Our Team */
+.teamText{
+    font-size: smaller;
+}
+.teamFloatIcons{
+    top: 30%;
+    z-index: 2;
+    display: none;
+}
+.teamFloatIcons a{
+    background-color: var(--light);
+    color: var(--main);
+    
+}
+
+.teamFloatIcons i{
+    padding: 10px;
+}
+.teamIcons:hover{
+    color: var(--light);
+    background-color: var(--main);
+}
+.teamCard:hover .teamPhoto{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.teamCard:hover .teamFloatIcons{
+    display:flex;
+    animation: iconMove 1s 1 forwards;
+}
+@keyframes iconMove{
+    0%{transform: translateX(-50px)};
+    100%{transform: translateX(0)};
+}
+@keyframes cardMove {
+    0%{transform: translatey(120px);}
+    20%{opacity: 0.5;}
+    30%{opacity: 1;
+        transform: translatey(90px);}
+    100%{transform: translatey(0px);
+        opacity: 1;}
+}
+
+
+
+/* Footer */
+footer a{
+ text-decoration: none;
+ color: white;
+}
+footer li a:hover{
+    letter-spacing: 1px;
+}
+footer a:hover{
+    color: var(--main);
+}
+footer li a::before{
+    content: ">";
+    font-size: smaller;
+    font-weight: 900;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+.iconFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+.finalRow{
+    margin-top: 60px;
+    border-top: 1px solid rgba(245, 245, 245, 0.1);
+    padding-top: 45px;
+}
+footer{
+    background-image: linear-gradient(rgba(53,53,53,0.7),rgba(53,53,53,0.7)), url(/resources/img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer li{
+    padding-top: 8px;
+}
+.footerText{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+}
+.btnFooter{
+    right: 0;
+    top: 6%;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+/* modal */
+.modal{
+    z-index: 9999;
+}
+/* Swiper */
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.cardPhoto{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    background-color: var(--sec);
+}
+.card{
+    border: none;
+}
+.card-body{
+    border: 5px solid var(--sec);
+}
+.maskCarouselsx{
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right, var(--light),var(--light),rgba(255,255,255,0));
+}
+.maskCarouseldx{
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right, rgba(255,255,255,0),var(--light),var(--light));
+}
+.swiper-next{
+    display: none;
+    position: absolute;
+    right: 42%; 
+    top:15%; 
+    z-index: 2;
+    color: var(--main);
+    animation: swipNextMove 1s 1;
+} 
+.swiper-prev{
+    display: none;
+    position: absolute;
+    left: 42%;
+    top: 15%;
+    z-index: 2;
+    color: var(--main);
+    animation: swipPrevMove 1s 1
+}
+.swiper-prev:hover, .swiper-next:hover{
+    color: var(--acc);
+}
+.swiper:hover .swiper-next, .swiper:hover .swiper-prev{
+    display: block;
+}
+@keyframes swipNextMove{
+    0%{
+        transform: translateX(50px) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes swipPrevMove{
+    0%{
+        transform: translateX(-50px) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 400px){
+    .swiper-prev{
+        display: none;
+    }
+    .swiper-prev{
+        display: none;
+    }
+}
+/* Page Project */
+.headerPageProj{
+    height: 325px;
+    background-image: linear-gradient(var(--darkTendina), var(--darkTendina)) ,url(/resources/img/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.h1PageProj{
+    font-weight: 700;
+    color: var(--light);
+}
+.headerPageProj a{
+    text-decoration: none;
+    color: var(--light);
+}
+.aPseudoEl::before{
+    content: "/";
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* Accordion */
+.accordionReset{
+    border: var(--main) solid 2px;
+    color: var(--main);
+    border-top: 0px;
+    background-color: var(--sec);
+}
+.accordionReset button{
+    color: var(--main);
+}
+.accordion-item {
+    color: var(--main);
+    background-color: var(--sec);
+    border: var(--main) solid 2px;
+}
+.accordion-button{
+    background-color: var(--sec);
+    color: var(--main);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--main);
+    background-color: var(--sec);
+    border: var(--main) solid 2px;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--main);
+    outline: 0;
+    box-shadow: none;
+}
+#price{
+    width: 200px;
+}
+/* card Project page */
+.card-background{
+    background-color: var(--main);
+    width: 100%;
+    border: var(--acc);
+}
+.tagCard{
+    background-color: var(--light);
+}
+/* spinner */
+.spinner-container{
+    height: 500px;
+    background-color: var(--main);
+    margin-bottom: 300px;
+}
+.schedeBackground{
+    background-color: var(--sec);
+};
+.alert-prompt{
+    background: var(--main);
+    color: var(--sec);
+}

@@ -1,0 +1,62 @@
+[ 
+    {
+        "id":4,
+        "name": "General Carpentery",
+        "category": "Custom Carpentry",
+        "class": "customCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card-1.jpg",
+        "price": 1000
+    },
+    {
+        "id":1,
+        "name": "Furniture Manufacturing",
+        "category": "General Carpentry",
+        "class": "generalCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card-2.jpg",
+        "price": 1500
+    },
+    {
+        "id":2,
+        "name": "Furniture Remodelling",
+        "category": "Custom Carpentry",
+        "class": "customCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card.3.jpg",
+        "price": 1600
+    },
+    {
+        "id":5,
+        "name": "Wooden Floor",
+        "category": "General Carpentry",
+        "class": "generalCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card-4.jpg",
+        "price": 2000
+    },
+    {
+        "id":3,
+        "name": "Wooden Furniture",
+        "category": "General Carpentry",
+        "class": "generalCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card-5.jpg",
+        "price": 1200
+    },
+    {
+        "id":6,
+        "name": "Custom Work",
+        "category": "Custom Carpentry",
+        "class": "customCategory",
+        "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+        "projects":"Wooden Furniture Manufacturing And Remodeling",
+        "url":"/img/card-6.jpg",
+        "price": 1300
+    }
+]
